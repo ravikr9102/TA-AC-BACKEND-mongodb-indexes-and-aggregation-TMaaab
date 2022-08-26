@@ -3,11 +3,12 @@ db.users.aggregate([{ $match: { isActive: true } }]);
 
 
 // 2. Find all users whose name includes `blake` case insensitive.
-// 
+
+
 // 3. Find all males.
 db.users.aggregate([{ $match: { gender: "male" } }]);
 
-
+J
 // 4. Find all active males.
 db.users.aggregate([ {$match: {gender:'male', isActive:true}}]).pretty();
 
